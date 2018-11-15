@@ -134,7 +134,11 @@ localparam 	IDLE  = "IDLE",
 			// Fifo full 
 			WAIT_DEV_ACK  = "WAIT_DEV_ACK",
 			EMPTY_FIFO_READ  = "EMPTY_FIFO_READ",
-			RESET  = "RESET";
+			RESET  = "RESET",
+			WAIT_MSP  = "WAIT_MSP",
+			EMPTY_FIFO_WRITE  = "EMPTY_FIFO_WRITE",
+			OLD_ADDR_EMP_FIFO_W = "OLD_ADDR_EMP_FIFO_W",
+			RESTORE_DEV_COUNT = "RESTORE_DEV_COUNT";
 `else
 localparam 	IDLE  = 0,
 			GET_REGS  = 1,
